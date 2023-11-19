@@ -1,6 +1,6 @@
-* {
-    box-sizing: border-box;
-}
+/* Existing CSS above this line */
+
+@media screen and (max-width: 800px) {
 body {
     background-color: #FFE62D;
     font-family: Arial, Helvetica, sans-serif;
@@ -110,4 +110,5 @@ footer {
     position: absolute;
     bottom: 0;
     width: 100%;
+    }
 }
