@@ -3,6 +3,7 @@
   <head>
     <title>VokemonS</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="assets/form.css">
     <link rel="stylesheet" type="text/css" href="assets/style.css">
   </head>
 <body class="home">
@@ -36,18 +37,16 @@
           </div>
         </div>
       </div>
-        <h1>Register Page</h1>
-        <div class="register">
-            <h3>Register</h3>
-            <p>Register to participate in the tournament.</p>
-            
+      <div id="main-container">
+        <div id="form-container">
+            <div id="title">Register Form</div>
             <form action="" id="register-form" onsubmit="formValidation(event)">
                 <label for="name">Full Name</label>
-                <input type="text" name="name" id="name" class="inputted" placeholder="input your name">
+                <input type="text" name="name" id="name" class="inputted" placeholder="Enter your name here">
                 <label for="dob">Date of Birth</label>
                 <input type="date" name="dob" id="dob" class="inputted" >
                 <label for="pass">Password</label>
-                <input type="password" name="pass" id="pass" class="inputted" placeholder="input your password">
+                <input type="password" name="pass" id="pass" class="inputted" placeholder="Fill your password">
                 <label for="email">Email</label>
                 <input type="email" name="email" id="email" class="inputted" placeholder="input your email">
                 <label for="gender">Gender</label>
@@ -60,9 +59,9 @@
                         <input type="radio" name="gender" id="female" value="female">
                         <span id="desc">Female</span>
                     </div>
+          
                 </div>
-          </div>
-      </div>
+                <button type="submit" id="bttn-submit">Submit</button>    
       </body>
       <script src="script/script.js"></script>
 </html>
