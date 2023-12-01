@@ -6,7 +6,7 @@
 }
 .form-box {
     width: 90%;
-    max-width: 400px;
+    max-width: 450px;
     position: absolute;
     left: 50%;
     transform: translate(-50%, 50%);
@@ -34,7 +34,7 @@
 .input-field {
     background: #eaeaea;
     margin: 15px 0;
-    border-radius: 6px;
+    border-radius: 3px;
     display: flex;
     align-items: center;
 }
@@ -48,21 +48,4 @@ input {
 .input-field i {
     margin-left: 15px;
     color: #999
-}
-.btn-field {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-.btn-field button {
-    width: 48%;
-    background: #E92929;
-    border: 0;
-    outline: 0;
-    padding: 15px 0;
-    border-radius: 6px;
-    color: #fff;
-    font-size: 18px;
-    font-weight: 600;
-    cursor: pointer;
 }
