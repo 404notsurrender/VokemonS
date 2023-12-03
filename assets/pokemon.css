@@ -1,6 +1,6 @@
 
-  .card {
-    left: 75px;
+  .box {
+    left: 20px;
     display: flex;
     flex-direction: column;
     width: 316px;
@@ -53,8 +53,8 @@
     line-height: 12.5px;
   }
   
-  .card-2 {
-    left: 431px;
+  .box-2 {
+    left: 400px;
     display: flex;
     flex-direction: column;
     width: 316px;
@@ -68,8 +68,8 @@
     border-radius: 15px;
   }
   
-  .card-3 {
-    left: 802px;
+  .box-3 {
+    left: 770px;
     display: flex;
     flex-direction: column;
     width: 316px;
@@ -83,8 +83,8 @@
     border-radius: 15px;
   }
   
-  .card-4 {
-    left: 1173px;
+  .box-4 {
+    left: 1150px;
     display: flex;
     flex-direction: column;
     width: 316px;
