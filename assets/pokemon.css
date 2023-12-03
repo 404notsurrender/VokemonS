@@ -1,0 +1,70 @@
+.flex-container {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+.flex-card-1 {
+    width: 250px;
+    height: 300px;
+    gap: 7.12px;
+    padding: 15px;
+    top: 300px;
+    left: 25px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    background-color: #FFE62D;
+  }
+.flex-card-2 {
+    width: 250px;
+    height: 300px;
+    gap: 7.12px;
+    padding: 15px;
+    top: 300px;
+    left: 150px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    background-color: #FFE62D;
+  }
+.flex-card-3 {
+    width: 250px;
+    height: 300px;
+    gap: 7.12px;
+    padding: 15px;
+    top: 300px;
+    left: 575px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    background-color: #FFE62D;
+  }
+.card img {
+    width: 100%;
+    height: 200px;
+    margin-bottom: 15px;
+    background-size: cover;
+    background-color: #FFE62D;
+}
+h1 {
+    font-size: 30px;
+    color: #000;
+    position: absolute;
+    margin-left: 650px;
+    margin-top: 150px;
+    font-family: 'Popins', sans-serif;
+
+}
+h2 {
+    font-size: 20px;
+    color: #000;
+    position: absolute;
+    margin-left: 650px;
+    margin-top: 200px;
+    font-family: 'Popins', sans-serif;
+}

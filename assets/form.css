@@ -36,7 +36,7 @@
     transform: (-50%);
 }
 .input-field {
-    background: #eaeaea;
+    background: #FFF396;
     margin: 15px 0;
     border-radius: 6px;
     display: flex;
@@ -51,7 +51,7 @@ input {
 }
 .input-field i {
     margin-left: 15px;
-    color: #999
+    color: #000000
 }
 .btn-field {
     width: 100%;
@@ -73,6 +73,7 @@ input {
     accent-color: #E92929;
 }
 .checkbox label {
+    display: flex;
     margin-top: 4px;
     font-size: 12px;
     cursor: pointer;
