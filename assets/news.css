@@ -1,0 +1,10 @@
+.news-card {
+    top: 280px;
+    margin: 20px;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 1 0 5px #ddd;
+    position: absolute;
+    background: #FFE62D;
+    width: 276px;
+}
