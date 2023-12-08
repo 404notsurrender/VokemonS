@@ -9,37 +9,20 @@ h1 {
     font-family: 'Poppins', sans-serif';
 
 }
-.news-card {
+.flex-container {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    top: 280px;
-    margin: 20px;
-    border-radius: 5px;
-    overflow: hidden;
-    box-shadow: 1 0 5px #ddd;
-    position: absolute;
-    background: #FFE62D;
-    width: 276px;
+    flex-direction: row;
+    justify-content: center;
+    align-content: flex-start;
 }
-.news-card-1 {
-    margin-left: 220px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    top: 280px;
-    margin: 20px;
-    border-radius: 5px;
-    overflow: hidden;
-    box-shadow: 1 0 5px #ddd;
-    position: absolute;
-    background: #FFE62D;
-    width: 276px;
-}
-footer {
-    background: #FFE62D;
-    padding: 20px 0;
-    text-align: center;
-    font-size: 14px;
-    color: #000;
+.flex-container > div {
+        background-color: #f1f1f1;
+        width: 500px;
+        margin: 20px;
+        gap: 5px;
+        text-align: center;
+        line-height: 75px;
+        font-size: 12px;
+        flex-wrap: wrap;
+        align-content: flex-end;
 }
