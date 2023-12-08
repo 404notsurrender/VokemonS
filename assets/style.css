@@ -417,6 +417,17 @@ body {
     letter-spacing: 0;
     line-height: 16px;
   }
+  .home .text-wrapper-3::after {
+    content: '';
+    width: 50px;
+    height: 4px;
+    border-radius: 6px;
+    background: #E92929;
+    position: absolute;
+    bottom: -8px;
+    left: 25%;
+    transform: (-50%);
+  }
   .home .card-3 {
     width: 510px;
     height: 442px;
