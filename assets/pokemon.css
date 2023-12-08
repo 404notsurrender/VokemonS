@@ -18,7 +18,7 @@ h1 {
 .flex-container > div {
   background-color: #f1f1f1;
   width: 270px;
-  height: 350px;
+  height: 402px;
   margin: 20px;
   text-align: left;
   line-height: 15px;
@@ -43,5 +43,5 @@ h1 {
 img {
   border-radius: 8px 8px 8px 8px;
   width: 270px;
-  height: 176px;
+  height: 240px;
 }
