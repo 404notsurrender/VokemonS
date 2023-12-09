@@ -16,6 +16,7 @@ h1 {
   align-content: flex-start;
 }
 .flex-container > div {
+  padding: 10px;
   background-color: #f1f1f1;
   width: 270px;
   height: 370px;
