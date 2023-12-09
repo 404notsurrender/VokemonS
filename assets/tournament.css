@@ -1,38 +1,27 @@
-.container {
-    position: relative;
-    width: 1100px;
+.match-container {
+    margin: 70px 10px 70px;
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 10px;
+}
+
+.match-header {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.match-details {
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-wrap: wrap;
-    padding: 30px;
-    margin-top: 8%;
 }
-.container .card {
-    width: 300px;
-    position: relative;
-    height: 400px;
-    background: #f0f0f0;
-    margin: 30px 10px;
-    padding: 20px 15px;
-    display: flex;
-    flex-direction: column;
-    box-shadow: 0.5px 10px #e6e6e6;
-    transition: 0.3% ease-in-out;
-    margin-top: 5%;
+
+.match-details > div {
+    flex: 1;
+    margin-bottom: 10px;
 }
-.container .card .img8x {
-    position: relative;
-    width: 260px;
-    height: 260px;
-    top: -60px;
-    left: 20px;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 1.2);
-}
-.container .card .img8x img {
-    max-width: 100%;
-    border-radius: 10px;
-}
-.img8x:hover img {
-    transform: scale(1.1);
+
+.trainer-logo {
+    max-width: 100px;
+    max-height: 100px;
 }
