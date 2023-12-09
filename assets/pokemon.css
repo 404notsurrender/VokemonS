@@ -18,8 +18,9 @@ h1 {
 .flex-container > div {
   background-color: #f1f1f1;
   width: 270px;
-  height: 402px;
+  height: 370px;
   margin: 20px;
+  margin-bottom: 2px;
   text-align: left;
   line-height: 15px;
   font-size: 12px;
