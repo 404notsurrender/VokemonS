@@ -148,8 +148,27 @@ input {
     font-weight: 600;
     cursor: pointer;
 }
-.error-line{
-    color: red;
+.btn-field button:hover {
+    background: #000000;
+
+}
+.btn-field button:before{
+    content: "";
+    position: relative;
+    background-color: #fff;
+    height: 3px;
+    left: 0;
+    top: 0;
+    transition: 0.3s;
+    transform-origin: 0 0;
+    transition-timing-function: cubic-bezier(0.5,1.6,0.4,0.7);
+  }
+.btn-field button:hover:before{
+    width: 100%;
+    transform: scaleX(0);
+}
+#error-line{
+    color: #E92929;
     font-size: 15px;
     text-align: center;
 }
