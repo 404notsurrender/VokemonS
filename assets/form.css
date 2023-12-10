@@ -116,3 +116,8 @@ input {
     font-weight: 600;
     cursor: pointer;
 }
+.error-line{
+    color: red;
+    font-size: 15px;
+    text-align: center;
+}

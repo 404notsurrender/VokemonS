@@ -1,46 +1,61 @@
-var error = document.getElementById('error-line');
-error.innerHTML = "";
+document.addEventListener('DOMContentLoaded', function() {
+    var error = document.getElementById('error-line');
+    error.innerHTML = "";
 
-function formValidation(e) { // e itu event
-    e.preventDefault(); // biar HTML gak ke refresh
-    var name = document.getElementById('name').value;
-    var pass = document.getElementById('pass').value;
-    var email = document.getElementById('email').value;
+    function formValidation(e) {
+        e.preventDefault();
 
-    var hasLowercase = false;
-    var hasUppercase = false;
-    var hasNumber = false;
-    var emailpart = email.split("@");
-    var domain = emailpart[1];
+        var name = document.getElementById('name').value;
+        var email = document.getElementById('email').value;
+        var password = document.getElementById('password').value;
+        var confirmPassword = document.getElementById('confirm-password').value;
+        var male = document.getElementById('male');
+        var female = document.getElementById('female');
+        var agreeTerms = document.getElementById('agree-terms');
 
-    for (var i = 0; i < pass.length; i++) {
-        if (pass[i] >= 'a' && pass[i] <= 'z') {
-            hasLowercase = true;
-        } else if (pass[i] >= 'A' && pass[i] <= 'Z') {
-            hasUppercase = true;
-        } else if (pass[i] >= '0' && pass[i] <= '9') {
-            hasNumber = true;
-    }
-}
-    if (name == "") {
-        error.innerHTML = "Full name must not empty!"; 
-        } else if (pass == "") {
-            error.innerHTML = "Password must not empty!";
-        } else if (hasUppercase == false) {
-            error.innerHTML = "Password must contain at least one uppercase!";
-        } else if (hasLowercase == false) {
-            error.innerHTML = "Password must contain at least one lowercase!";
-        } else if (hasNumber == false) {
-            error.innerHTML = "Password must contain at least one number!";
-        } else if (email == "") {
-            error.innerHTML = "Email must not empty!";
-        } else if (domain != "gmail.com") {
-            error.innerHTML = "Email must contain @gmail.com!";
-        } else if (male.checked == false && female.checked == false) {
-            error.innerHTML = "Gender must not empty!";
-            console.log();
-        } else {
-        alert("Successfull Register!");
+        // Validation for Name
+        if (name.trim() === "") {
+            error.innerHTML = "Full name must not be empty!";
+            return;
         }
-}
-console.log(error);
+
+        // Validation for Email
+        if (email.trim() === "") {
+            error.innerHTML = "Email must not be empty!";
+            return;
+        }
+
+        // Validation for Password
+        if (password.trim() === "") {
+            error.innerHTML = "Password must not be empty!";
+            return;
+        }
+
+        // Validation for Confirm Password
+        if (confirmPassword.trim() === "") {
+            error.innerHTML = "Confirm Password must not be empty!";
+            return;
+        } else if (confirmPassword !== password) {
+            error.innerHTML = "Passwords do not match!";
+            return;
+        }
+
+        // Validation for Gender
+        if (!male || !female || (male.checked === false && female.checked === false)) {
+            error.innerHTML = "Gender must not be empty!";
+            return;
+        }
+
+        // Validation for Terms and Conditions
+        if (!agreeTerms.checked) {
+            error.innerHTML = "You must agree to the Terms and Conditions!";
+            return;
+        }
+
+        // If all validations pass, proceed with registration
+        alert("Successful Registration!");
+    }
+
+    // Attach the event listener to the form
+    document.getElementById('register').addEventListener('submit', formValidation);
+});

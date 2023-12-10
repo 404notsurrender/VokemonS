@@ -45,19 +45,19 @@
         <div class="input-group">
             <div class="input-field">
                 <i class="fa-solid fa-envelope"></i>
-                <input type="email" placeholder="Email">
+                <input type="email" id="email" placeholder="Email">
             </div>
             <div class="input-field">
                 <i class="fa-solid fa-user"></i>
-                <input type="full-name" placeholder="Full Name">
+                <input type="full-name" id="name" placeholder="Full Name">
             </div>
             <div class="input-field">
                 <i class="fa-solid fa-lock"></i>
-                <input type="password" placeholder="Password">
+                <input type="password" id="password" placeholder="Password">
             </div>
             <div class="input-field">
               <i class="fa-solid fa-lock"></i>
-              <input type="password" placeholder="Confirm Password">
+              <input type="password" id="confirm-password" placeholder="Confirm Password">
           </div>
           <div class="radio-group">
             <div class="radio-option">
@@ -73,6 +73,7 @@
             <input type="checkbox" class="checkbox" name="checkbox" id="checkbox">
             <label id="checkbox-text">I agree to the Terms and Conditions.</label>
           </div>
+          <div class="error" id="error-line"></div>
           <div class="btn-field">
             <button type="submit">Register</button>
           </div>
