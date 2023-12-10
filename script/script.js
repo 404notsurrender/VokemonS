@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
         var confirmPassword = document.getElementById('confirm-password').value;
         var male = document.getElementById('male');
         var female = document.getElementById('female');
-        var agreeTerms = document.getElementById('agree-terms');
+        var agreeTerms = document.getElementById('checkbox');
 
         // Validation for Name
         if (name.trim() === "") {
@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
 
         // Validation for Gender
-        if (!male || !female || (male.checked === false && female.checked === false)) {
+        if (!male.checked && !female.checked) {
             error.innerHTML = "Gender must not be empty!";
             return;
         }
