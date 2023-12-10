@@ -6,6 +6,38 @@
   font-family: "Poppins-Regular";
   src: url(./fonts/Poppins-Regular.otf);
 }
+a {
+  margin-left: 8px;
+  position: relative;
+  width: fit-content;
+  margin-top: -1px;
+  font-family: "AirbnbCereal_W_XBd", sans-serif;
+  font-weight: 700;
+  color: #000000;
+  font-size: 22px;
+  letter-spacing: 0;
+  line-height: 16px;
+  white-space: nowrap;
+  text-decoration: none; /* Remove default underline for links */
+  transition: color 0.3s ease; /* Add smooth transition for color change */
+}
+
+a:hover {
+  color: #E92929; /* Color on hover */
+}
+a:after{
+  content: "";
+  position: absolute;
+  background-color: #E92929;
+  height: 3px;
+  width: 0;
+  left: 0;
+  bottom: -10px;
+  transition: 0.3s;
+}
+a:hover:after{
+  width: 100%;
+}
 body {
     background-color: #ffffff;
     margin: 0;
