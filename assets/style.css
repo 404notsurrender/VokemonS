@@ -1,3 +1,135 @@
+@media screen and (max-width: 600px){
+  body {
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    min-width: 50%;
+    font-family: "AirbnbCereal_W_XBd", sans-serif;
+    font-weight: 400;
+    color: #000000;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: 16px;
+    white-space: normal;
+}
+.home {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .home .div {
+    background-color: #ffffff;
+    overflow: hidden;
+    width: 1530px;
+    height: 1046px;
+    position: relative;
+  }
+  
+  .home .overlap {
+    position: absolute;
+    width: 1533px;
+    height: 105px;
+    top: 0;
+    left: 0;
+  }
+  
+  .home .overlap-group {
+    position: relative;
+    width: 40px;
+    height: 41px;
+    top: 3px;
+    left: 4px;
+  }
+  
+  .home .image {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+  }
+  
+  .home .nav {
+    position: absolute;
+    width: 1533px;
+    height: 80px;
+    top: 0;
+    left: 0;
+    background-color: #ffe62d;
+  }
+  
+  .home .frame {
+    display: inline-flex;
+    height: 54px;
+    align-items: center;
+    gap: 12px;
+    padding: 13px 24px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #ffffff;
+  }
+  
+  .home .img {
+    position: relative;
+    width: 38.52px;
+    height: 43.79px;
+    object-fit: cover;
+  }
+  
+  .home .text-wrapper {
+    position: relative;
+    width: fit-content;
+    font-family: "AirbnbCereal_W_XBd", sans-serif;
+    font-weight: 900;
+    color: #000000;
+    font-size: 22px;
+    letter-spacing: 0;
+    line-height: 22px;
+    white-space: nowrap;
+  }
+  
+  .home .frame-2 {
+    display: inline-flex;
+    align-items: flex-start;
+    position: absolute;
+    top: 16px;
+    left: 223px;
+  }
+  
+  .home .nav-selected-item {
+    display: inline-flex
+}
+    
+    .home .nav-item-text {
+      display: inline-flex;
+      align-items: center;
+      position: relative;
+      flex: 0 0 auto;
+    }
+    
+    .home .nav-item a {
+      margin-left: 8px;
+      position: relative;
+      width: fit-content;
+      margin-top: -1px;
+      font-family: "AirbnbCereal_W_XBd", sans-serif;
+      font-weight: 700;
+      color: #000000;
+      font-size: 16px;
+      letter-spacing: 0;
+      line-height: 16px;
+      white-space: nowrap;
+      text-decoration: none; /* Remove default underline for links */
+      transition: color 0.3s ease; /* Add smooth transition for color change */
+}
+
+}
 @font-face {
   font-family: "AirbnbCereal_W_XBd";
   src: url(./fonts/AirbnbCereal_W_XBd.otf);
@@ -873,3 +1005,6 @@ body {
     width: 24px;
     height: 24px;
   }
+@media screen and max-width(800px) {
+  
+}
